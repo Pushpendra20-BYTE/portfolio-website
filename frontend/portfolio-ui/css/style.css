@@ -1,0 +1,227 @@
+/* =========================================
+   Global Styles
+   Author : Pushpendra Singh Rathore
+========================================= */
+
+/* ================= Theme Variables ================= */
+
+:root{
+
+    --background:#0B0B0B;
+
+    --surface:#141414;
+
+    --surface-light:#1D1D1D;
+
+    --text-primary:#FFFFFF;
+
+    --text-secondary:#A1A1AA;
+
+    --border:#2B2B2B;
+
+    --hover:#3A3A3A;
+
+    --shadow:rgba(255,255,255,0.06);
+
+}
+/* ================= Light Theme ================= */
+
+body.light-theme{
+
+    --background:#F5F5F5;
+
+    --surface:#FFFFFF;
+
+    --surface-light:#EEEEEE;
+
+    --text-primary:#111111;
+
+    --text-secondary:#666666;
+
+    --border:#D6D6D6;
+
+    --hover:#E5E5E5;
+
+    --shadow:rgba(0,0,0,0.08);
+
+}
+
+/* ================= Reset ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ================= Global ================= */
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:var(--background);
+
+    color:var(--text-primary);
+
+    overflow-x:hidden;
+
+    line-height:1.6;
+
+}
+
+/* ================= Common Styles ================= */
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+button{
+    font-family:inherit;
+    cursor:pointer;
+    border:none;
+}
+
+ul{
+    list-style:none;
+}
+
+section{
+    padding:100px 0;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+}
+/* ================= Light Theme ================= */
+
+body.light-theme{
+
+    --background:#F5F5F5;
+
+    --surface:#FFFFFF;
+
+    --surface-light:#EEEEEE;
+
+    --text-primary:#111111;
+
+    --text-secondary:#666666;
+
+    --border:#D6D6D6;
+
+    --hover:#E5E5E5;
+
+    --shadow:rgba(0,0,0,0.08);
+
+}
+/* =========================================
+   Scroll Button
+========================================= */
+
+.scroll-button{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:50px;
+
+    height:50px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border:1px solid var(--border);
+
+    border-radius:50%;
+
+    background:var(--surface);
+
+    color:var(--text-primary);
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    z-index:999;
+
+    transition:all .3s ease;
+
+}
+
+.scroll-button:hover{
+
+    background:var(--text-primary);
+
+    color:var(--background);
+
+    transform:translateY(-5px);
+
+}
+
+/* =========================================
+   Global Section Styling
+========================================= */
+
+section{
+    padding:100px 20px;
+}
+
+.container{
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.section-title{
+    text-align:center;
+    font-size:42px;
+    line-height:1.2;
+    margin-bottom:15px;
+    color:var(--text-primary);
+}
+
+.section-subtitle{
+    text-align:center;
+    max-width:650px;
+    margin:0 auto 50px;
+    color:var(--text-secondary);
+    line-height:1.7;
+}
+
+
+/* Smooth transitions for theme change */
+
+body,
+.header,
+.footer,
+.about,
+.contact,
+.certificate-card,
+.info-box,
+.contact-form,
+.theme-toggle,
+.scroll-button{
+    transition:
+        background-color .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}

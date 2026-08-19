@@ -1,0 +1,214 @@
+/* =========================================
+   Footer Styles
+   Author : Pushpendra Singh Rathore
+========================================= */
+
+.footer{
+
+    background:#080808;
+
+    border-top:1px solid var(--border);
+
+    padding:70px 20px 20px;
+
+}
+
+.footer-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:60px;
+
+}
+
+.footer-brand h2{
+
+    font-size:32px;
+
+    color:var(--text-primary);
+
+    margin-bottom:15px;
+
+}
+
+.footer-brand p{
+
+    max-width:400px;
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}
+
+.footer-links,
+.footer-social{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+.footer-links h3,
+.footer-social h3{
+
+    color:var(--text-primary);
+
+    font-size:18px;
+
+    margin-bottom:20px;
+
+}
+
+.footer-links a{
+
+    color:var(--text-secondary);
+
+    text-decoration:none;
+
+    margin-bottom:12px;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:var(--text-primary);
+
+    transform:translateX(5px);
+
+}
+
+
+/* ================= Social Links ================= */
+
+.social-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    width:100%;
+
+}
+
+.social-links a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    width:max-content;
+
+    color:var(--text-secondary);
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.social-links a i{
+
+    width:35px;
+
+    height:35px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border:1px solid var(--border);
+
+    border-radius:50%;
+
+    color:var(--text-primary);
+
+    background:var(--surface);
+
+    transition:.3s;
+
+}
+
+.social-links a:hover{
+
+    color:var(--text-primary);
+
+    transform:translateX(5px);
+
+}
+
+.social-links a:hover i{
+
+    background:var(--text-primary);
+
+    color:var(--background);
+
+}
+
+
+/* ================= Footer Bottom ================= */
+
+.footer-bottom{
+
+    max-width:1200px;
+
+    margin:60px auto 0;
+
+    padding-top:20px;
+
+    border-top:1px solid var(--border);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.footer-bottom p{
+
+    color:var(--text-secondary);
+
+    font-size:14px;
+
+}
+
+.back-to-top{
+
+    color:var(--text-primary);
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    transition:.3s;
+
+}
+
+.back-to-top:hover{
+
+    transform:translateY(-3px);
+
+}

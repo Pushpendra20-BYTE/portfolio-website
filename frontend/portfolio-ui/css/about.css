@@ -1,0 +1,72 @@
+/* =========================================
+   About Section Styles
+   Author : Pushpendra Singh Rathore
+========================================= */
+
+.about{
+    padding:100px 8%;
+    background:var(--background);
+}
+
+.about-container{
+    max-width:1200px;
+    margin:auto;
+    text-align:center;
+}
+
+.about h2{
+    font-size:42px;
+    color:var(--text-primary);
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+.about-subtitle{
+    font-size:22px;
+    color:var(--text-secondary);
+    margin-bottom:30px;
+    font-weight:500;
+}
+
+.about-description{
+    max-width:850px;
+    margin:0 auto 60px;
+    font-size:18px;
+    line-height:1.8;
+    color:var(--text-secondary);
+}
+
+.about-info{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+    gap:25px;
+}
+
+.info-box{
+    background:var(--surface);
+    padding:30px 20px;
+    border:1px solid var(--border);
+    border-radius:16px;
+    transition:all 0.35s ease;
+    cursor:pointer;
+}
+
+.info-box h3{
+    color:var(--text-primary);
+    font-size:24px;
+    margin-bottom:12px;
+    font-weight:600;
+}
+
+.info-box p{
+    color:var(--text-secondary);
+    font-size:16px;
+    line-height:1.6;
+}
+
+.info-box:hover{
+    transform:translateY(-8px);
+    border-color:var(--text-primary);
+    background:var(--surface-light);
+    box-shadow:0 12px 30px var(--shadow);
+}

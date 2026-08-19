@@ -1,0 +1,86 @@
+/* =========================================
+   Certifications Section
+========================================= */
+
+.certifications {
+    background: var(--background);
+}
+
+.certifications-grid {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 30px;
+}
+
+.certificate-card {
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    transition: 0.35s ease;
+
+    /* Added for equal button alignment */
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate-card:hover {
+    transform: translateY(-8px);
+
+    border-color: var(--text-primary);
+
+    box-shadow: 0 10px 30px var(--shadow);
+}
+
+.certificate-card h3 {
+    margin-bottom: 15px;
+
+    color: var(--text-primary);
+}
+
+.certificate-card p {
+    color: var(--text-secondary);
+
+    margin-bottom: 10px;
+}
+
+.certificate-card span {
+    display: block;
+
+    color: var(--text-secondary);
+
+    margin-bottom: 25px;
+
+    font-size: 14px;
+}
+
+.certificate-btn {
+    display: inline-block;
+
+    width: fit-content;
+
+    padding: 12px 22px;
+
+    background: var(--text-primary);
+
+    color: var(--background);
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+
+    /* Added */
+    margin-top: auto;
+}
+
+.certificate-btn:hover {
+    background: #d9d9d9;
+}

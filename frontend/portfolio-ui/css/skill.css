@@ -1,0 +1,102 @@
+/* =========================================
+   Skills Section Styles
+   Author : Pushpendra Singh Rathore
+========================================= */
+
+.skills{
+
+    background:var(--background);
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    font-size:42px;
+
+    color:var(--text-primary);
+
+    margin-bottom:15px;
+
+}
+
+.section-subtitle{
+
+    text-align:center;
+
+    color:var(--text-secondary);
+
+    margin-bottom:60px;
+
+    font-size:18px;
+
+}
+
+.skills-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.skill-card{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:16px;
+
+    padding:30px;
+
+    transition:.3s ease;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--text-primary);
+
+    box-shadow:0 10px 30px var(--shadow);
+
+}
+
+.skill-card h3{
+
+    font-size:22px;
+
+    margin-bottom:20px;
+
+    color:var(--text-primary);
+
+}
+
+.skill-card ul{
+
+    list-style:none;
+
+}
+
+.skill-card ul li{
+
+    color:var(--text-secondary);
+
+    padding:10px 0;
+
+    border-bottom:1px solid var(--border);
+
+    font-size:16px;
+
+}
+
+.skill-card ul li:last-child{
+
+    border-bottom:none;
+
+}

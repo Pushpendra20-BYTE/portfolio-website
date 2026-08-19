@@ -1,0 +1,152 @@
+/* =========================================
+   Navbar Styles
+   Author : Pushpendra Singh Rathore
+========================================= */
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+
+    background:rgba(11,11,11,0.85);
+
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+
+    border-bottom:1px solid var(--border);
+
+    z-index:1000;
+}
+
+.navbar{
+    max-width:1200px;
+
+    margin:auto;
+
+    height:80px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 20px;
+}
+
+.logo{
+    text-decoration:none;
+
+    color:var(--text-primary);
+
+    font-size:32px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    transition:0.3s ease;
+}
+
+.logo:hover{
+    color:var(--text-secondary);
+}
+
+.nav-menu{
+    display:flex;
+
+    list-style:none;
+
+    gap:35px;
+
+    margin-left:auto;
+}
+
+.nav-menu a{
+
+    text-decoration:none;
+
+    color:var(--text-secondary);
+
+    font-size:17px;
+
+    font-weight:500;
+
+    transition:all .3s ease;
+
+    position:relative;
+
+}
+
+/* Underline Animation */
+
+.nav-menu a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--text-primary);
+
+    transition:width .3s ease;
+
+}
+
+.nav-menu a:hover{
+
+    color:var(--text-primary);
+
+}
+
+.nav-menu a:hover::after{
+
+    width:100%;
+
+}
+/* ================= Theme Toggle ================= */
+
+.theme-toggle{
+
+    width:42px;
+    height:42px;
+    margin-left:40px;
+    flex-shrink:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:var(--surface);
+
+    color:var(--text-primary);
+
+    border:1px solid var(--border);
+
+    border-radius:50%;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:all .3s ease;
+
+}
+
+.theme-toggle:hover{
+
+    background:var(--text-primary);
+
+    color:var(--background);
+
+    transform:rotate(15deg);
+
+}
